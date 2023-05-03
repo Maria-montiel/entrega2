@@ -1,9 +1,12 @@
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
   
   :root {
-    --background: white;
-    --primary: #CF9893 ;
-    --secondary:white ;
+    --background: black;
+    --color1 :#CDEAC0;
+    --color2:white ;
+    --color3: #e8be87 ;
+    
   }
 * {
   margin: 0%;
@@ -11,7 +14,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  font-family: 'Montserrat', sans-serif; ;
+ font-family: 'Roboto Condensed', sans-serif;
 }
 
 header{
@@ -42,9 +45,94 @@ justify-content: center;
 }
 .navbar-list{
   gap: 50px;
+  font-size: 20px;
 }
 .navbar-list a {
-  color: var(--primary);
-  font-size: 30px;
+  color: var(--letras)
 }
 
+main {
+
+  background-color:#CDEAC0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  width: 100%;
+}
+#hero {
+  margin-top: 65px;
+  padding: 70px 0; 
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-info {
+display: flex;
+flex-direction: column;
+gap: 20px;
+width: 50%;
+}
+.hero-info h1 {
+  font-size: 58px;
+  width: 80%;
+  min-width: 500px;
+  font-weight: 800;
+  color: black;
+
+}
+.hero-info p {
+  font-size: 20px;
+  width: 70%;
+  color: black;
+
+}
+.hero-info p a {
+ color: black;
+ background-color: #e8be87;
+ width: 120px;
+ padding: 10px 10px;
+ border-radius: 10px;
+ font-size: 20px;
+ text-align: center;
+
+ 
+}
+.hero-image {
+  width: 600px;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  
+}
+#aboutus {
+  margin-top: 65px;
+  padding: 70px 0; 
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.about-us {
+display: flex;
+
+}
+.about-us h2 {
+  font-size: 60px;
+  color: black;
+display: flex;
+align-items: center;
+}
+.about-p {
+  font-size: 30px;
+  color: black;
+  display: flex;
+align-items: center;
+justify-content: baseline;
+}
